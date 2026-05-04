@@ -9,7 +9,7 @@ This project combines the MyCobot 280 M5 robot arm with a microphone and a camer
 The project is just a Python script that invokes these AI models:
 
 - Speech (transcription): Nvidia Parakeet TDT 0.6b v2
-- Language, reasoning, and tool calling: Qwen 2.5 1.5B Instruct
+- Language, reasoning, and tool calling: Qwen 2.5 1.5b Instruct
 - Vision: Google's Hand Landmarker (hands), OWL-ViT Base Patch32 (other)
 
 The robot arm executes coordinate-based movements (e.g., go to x, y, z) based on what it hears and sees.
@@ -90,7 +90,7 @@ pip install rich
 
 ### 5. Download Hand_Landmarker model:
 
-Unlike the other models which download at runtime from HuggingFace and Nvidia, the Hand_Landmarker model loads from file, so you need to download it (7.8 MB) yourself. In the project folder, run:
+Unlike the others which download at runtime from HuggingFace and Nvidia catalogs, the Hand_Landmarker model loads from a local file, so you need to download that file (7.8 MB) yourself. In the project folder, run:
 
 ```bash
 wget -q -O ./hand_landmarker.task https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task
