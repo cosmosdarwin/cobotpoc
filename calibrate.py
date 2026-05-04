@@ -12,7 +12,7 @@ Usage:
 2) As the robot visits each coordinate, mark the spot somehow, e.g., by placing an object there.
 3) When the camera preview pops open, click each marked spot in the same order. Coordinates in px will be printed.
 4) Copy both sets of coordinates into the transformCoords() function.
-5) Optionally, use CALIBRATE_ROBOT and CALIBRATE_CAMERA to run half separately.
+5) Optionally, use CAPTURE_WITH_ROBOT and CAPTURE_WITH_CAMERA to run half separately.
 """
 
 import time
